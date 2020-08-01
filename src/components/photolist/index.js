@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
+//import Modal from '../Modal';
+//import photo from '../../assets/websites/1.jpg'
 
-const PhotoList = ({category}) => {
-    const [Photos] = useState([
+ const PhotoList = ({ category }) => {
+    const [photos] = useState([
         {
             name: "run-link",
             category: "websites",
@@ -27,7 +29,7 @@ const PhotoList = ({category}) => {
             category: "cover",
             description: 'A photo of the main page background.'
         },
-    ]);
+    ]); 
 
     const currentPhotos = photos.filter((photo) => photo.category === category)
 
@@ -47,4 +49,6 @@ const PhotoList = ({category}) => {
       );
 }
 
-export default PhotoList;
+export default PhotoList;  
+
+

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import About from './components/About';
 import Nav from './components/Nav';
 import Gallery from "./components/Gallery";
-import coverImage from "../src/assets/cover/0.jpg"
+//import coverImage from "../src/assets/cover/0.jpg"
 
 import './App.css';
 
@@ -27,8 +27,8 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <div>
-          <Gallery></Gallery>
+        <div class="photocontainer">
+          <Gallery currentCategory={currentCategory}></Gallery>
           <About></About>
         </div>
       </main>
